@@ -1,0 +1,17 @@
+
+.carousel-caption h1
+{
+    color: #fff;
+    margin: 80px;
+    font-size: 2.3rem;
+    letter-spacing: 4px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .carousel-caption h1 
+    {
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+}

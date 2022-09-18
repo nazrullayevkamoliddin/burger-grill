@@ -1,0 +1,162 @@
+.header {
+  width: 100%;
+  height: 120px;
+  line-height: 100px;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 170px;
+  object-fit: contain;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ff6600;
+  margin-top: -25px;
+  margin-bottom: 0;
+}
+
+.logo h5 b
+{
+  color: #df2020;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ff6600
+}
+
+.active__menu {
+  color: #ff6600 !important;
+}
+
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.9rem;
+  color: #212245;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transition: 0.5s;
+}
+
+.nav__right .user a i:hover
+{
+  color: #ff6600;
+}
+
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #df2020;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: 140px;
+  }
+  .logo h5 {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+  }
+
+  .menu a {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: right;
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo h5 {
+    margin-top: -55px;
+    margin-left: 40px;
+  }
+}
