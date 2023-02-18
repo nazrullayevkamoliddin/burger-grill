@@ -2,10 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import { Container } from "reactstrap";
 import logo from "../../assets/images/logo.png";
-import { NavLink, Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-
-import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
+import { NavLink } from "react-router-dom";
 
 import "../../styles/header.css";
 
@@ -31,14 +28,8 @@ const nav__links = [
 const Header = () => {
   const menuRef = useRef(null);
   const headerRef = useRef(null);
-  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-  const dispatch = useDispatch();
 
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
-
-  const toggleCart = () => {
-    dispatch(cartUiActions.toggle());
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

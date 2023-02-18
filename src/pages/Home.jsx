@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-
+import Iframe from 'react-iframe';
 import News from "../pages/News.jsx";
 
 import heroImg from "../assets/images/hero.png";
@@ -128,7 +128,7 @@ const Home = () => {
                     Buyurtma <i class="ri-arrow-right-s-line"></i>
                   </a>
 
-                  <a className="all__foods-btn">
+                  <a href="/" className="all__foods-btn">
                     <Link to="/foods"> Barcha ovqatlar </Link>
                   </a>
                 </div>
@@ -176,14 +176,6 @@ const Home = () => {
               <h2 className="feature__title">
                 Biz <span> g'amho'rlik qilamiz </span>
               </h2>
-              <p className="mb-1 mt-4 feature__text">
-                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                officiis? */}
-              </p>
-              <p className="feature__text">
-                {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius.{" "} */}
-              </p>
             </Col>
 
             {featureData.map((item, index) => (
@@ -226,7 +218,6 @@ const Home = () => {
                   } `}
                   onClick={() => setCategory("BURGER")}
                 >
-                  {/* <img src={foodCategoryImg01} alt="" /> */}
                   Burger
                 </button>
 
@@ -295,12 +286,12 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <iframe
+              <Iframe
                 className="iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4775022186022!2d72.75502882100692!3d40.72951738805994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd03b471cd3683%3A0x8deee6a490ede57!2sBurger%20Grill!5e0!3m2!1sru!2s!4v1662372500505!5m2!1sru!2s"
                 width="600"
                 height="450"
-              ></iframe>
+              ></Iframe>
             </Col>
             <br />
             <br />
