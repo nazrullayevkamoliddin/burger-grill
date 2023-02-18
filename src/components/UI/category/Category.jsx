@@ -44,7 +44,7 @@ const Category = () => {
               <div className="category__img">
                 <img src={item.imgUrl} alt="category__item" />
               </div>
-              <a><Link to={item.path}>{item.display}</Link></a>
+              <a href="/"><Link to={item.path}>{item.display}</Link></a>
             </div>
           </Col>
         ))}

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 import { Container } from "reactstrap";
-import logo from '../../assets/images/logo.png';
+import logo from "../../assets/images/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -60,7 +60,7 @@ const Header = () => {
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
-            <img src={logo} alt="logo"/>
+            <img src={logo} alt="logo" />
           </div>
 
           {/* ======= menu ======= */}
@@ -82,20 +82,20 @@ const Header = () => {
 
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
-          <span className="user">
-              <a  href="https://t.me/burgergrilluz" target='_blank'>
+            <span className="user">
+              <a href="https://t.me/burgergrilluz">
                 <i class="ri-telegram-line"></i>
               </a>
             </span>
 
             <span className="user">
-              <a href='https://www.instagram.com/burgergrill9999/' target='_blank'>
+              <a href="https://www.instagram.com/burgergrill9999/">
                 <i class="ri-instagram-line"></i>
               </a>
             </span>
 
             <span className="user">
-              <a href='https://www.facebook.com/profile.php?id=100085195012120' target='_blank'>
+              <a href="https://www.facebook.com/profile.php?id=100085195012120">
                 <i class="ri-facebook-fill"></i>
               </a>
             </span>
@@ -103,7 +103,6 @@ const Header = () => {
             <span className="mobile__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>
             </span>
-
           </div>
         </div>
       </Container>

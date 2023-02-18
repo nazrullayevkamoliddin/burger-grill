@@ -23,7 +23,7 @@ const FoodDetails = () => {
 
   const product = products.find((product) => product.id === id);
   const [previewImg, setPreviewImg] = useState(product.image01);
-  const { title, price, category,  image01 } = product;
+  const { title, price, category, image01 } = product;
 
   const relatedProduct = products.filter((item) => category === item.category);
 
@@ -101,9 +101,7 @@ const FoodDetails = () => {
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  <NavLink to='/checkout'>
-                    Buyurtma
-                  </NavLink>
+                  <NavLink to="/checkout">Buyurtma</NavLink>
                 </button>
               </div>
             </Col>
@@ -116,24 +114,31 @@ const FoodDetails = () => {
                 >
                   Taom
                 </h6>
-
               </div>
 
               {tab === "desc" ? (
                 <div className="tab__content">
                   <p>
-
-                    Bu mahsulotni sizga qulay usulda  xarid qilishingiz mumkin: <br />
-                    <strong>Bizning Click</strong>: <b> 8600 0204 5003 6293 </b>    -- <strong>Jumaboyev Ixvoljon</strong> <br />
-
-                    Aloqa Uchun <a href="tel:+998979881010"> (+998) 97 988 1010 </a> <br />
-                      <a href="tel:+998945689999"> (+998) 94 568 9999 </a>
-                   <br /><br />
-                    <strong> Bizning ijtimoiy tarmoqlarimiz: </strong>  <br />
-                    <a href='https://www.instagram.com/burgergrill9999/' className="user" rel="noreferrer" target='_blank'>
+                    Bu mahsulotni sizga qulay usulda xarid qilishingiz mumkin:{" "}
+                    <br />
+                    <strong>Bizning Click</strong>: <b> 8600 0204 5003 6293 </b>{" "}
+                    -- <strong>Jumaboyev Ixvoljon</strong> <br />
+                    Aloqa Uchun{" "}
+                    <a href="tel:+998979881010"> (+998) 97 988 1010 </a> <br />
+                    <a href="tel:+998945689999"> (+998) 94 568 9999 </a>
+                    <br />
+                    <br />
+                    <strong> Bizning ijtimoiy tarmoqlarimiz: </strong> <br />
+                    <a
+                      href="https://www.instagram.com/burgergrill9999/"
+                      className="user"
+                    >
                       <i class="ri-instagram-line"></i>
                     </a>
-                    <a  href="https://t.me/burgergrill999" className="user" rel="noreferrer" target='_blank'>
+                    <a
+                      href="https://t.me/burgergrill999"
+                      className="user"
+                    >
                       <i class="ri-telegram-line"></i>
                     </a>
                   </p>
@@ -195,7 +200,9 @@ const FoodDetails = () => {
             </Col>
 
             <Col lg="12" className="mb-5 mt-4">
-              <h2 className="related__Product-title">Sizga ham yoqishi mumkin</h2>
+              <h2 className="related__Product-title">
+                Sizga ham yoqishi mumkin
+              </h2>
             </Col>
 
             {relatedProduct.map((item) => (

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
-import News from '../pages/News.jsx';
+import News from "../pages/News.jsx";
 
 import heroImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
@@ -17,20 +17,8 @@ import "../styles/home.css";
 import featureImg01 from "../assets/images/service-01.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
-
 import products from "../assets/fake-data/products.js";
-
-import foodCategoryImg01 from "../assets/images/hamburger.png";
-import foodCategoryImg02 from "../assets/images/pizza.png";
-import foodCategoryImg03 from "../assets/images/bread.png";
-
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
-
-import whyImg from "../assets/images/location.png";  
-
-import networkImg from "../assets/images/network.png";
-
-import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
 const featureData = [
   {
@@ -49,7 +37,6 @@ const featureData = [
     imgUrl: featureImg02,
     desc: "",
   },
- 
 ];
 
 const Home = () => {
@@ -108,7 +95,7 @@ const Home = () => {
 
       setAllProducts(filteredProducts);
     }
-     
+
     if (category === "DESSERT") {
       const filteredProducts = products.filter(
         (item) => item.category === "dessert"
@@ -120,7 +107,7 @@ const Home = () => {
 
   return (
     <Helmet title="Home">
-       <section className="pt-0">
+      <section className="pt-0">
         <News />
       </section>
       <section>
@@ -128,20 +115,17 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-                <h5 className="mb-3"> Buyurtma Berishning oson usuli  </h5>
+                <h5 className="mb-3"> Buyurtma Berishning oson usuli </h5>
                 <h1 className="mb-4 hero__title">
                   <span>Ochmisiz?</span> Faqat kuting <br /> taom
                   <span> sizning eshigingizda</span>
                 </h1>
-
-                <p>
-                  {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                  magni delectus tenetur autem, sint veritatis! */}
-                </p>
-
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
-                  <a className="order__btn d-flex align-items-center justify-content-between" href='https://t.me/burgergrill9999' target='_blank'>
-                   Buyurtma <i class="ri-arrow-right-s-line"></i>
+                  <a
+                    className="order__btn d-flex align-items-center justify-content-between"
+                    href="https://t.me/burgergrill9999"
+                  >
+                    Buyurtma <i class="ri-arrow-right-s-line"></i>
                   </a>
 
                   <a className="all__foods-btn">
@@ -184,10 +168,13 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h5 className="feature__subtitle mb-4"> Biz qanday xizmat qilamiz </h5>
-              <h2 className="feature__title"> Siz uyda o'tiring   </h2>
+              <h5 className="feature__subtitle mb-4">
+                {" "}
+                Biz qanday xizmat qilamiz{" "}
+              </h5>
+              <h2 className="feature__title"> Siz uyda o'tiring </h2>
               <h2 className="feature__title">
-              Biz <span> g'amho'rlik qilamiz </span>
+                Biz <span> g'amho'rlik qilamiz </span>
               </h2>
               <p className="mb-1 mt-4 feature__text">
                 {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
@@ -272,7 +259,7 @@ const Home = () => {
                   {/* <img src={foodCategoryImg03} alt="" /> */}
                   Donar
                 </button>
-                
+
                 <button
                   className={`d-flex align-items-center gap-2 ${
                     category === "DRINK" ? "foodBtnActive" : ""
@@ -292,7 +279,6 @@ const Home = () => {
                   {/* <img src={foodCategoryImg03} alt="" /> */}
                   Shirinliklar
                 </button>
-
               </div>
             </Col>
 
@@ -309,13 +295,18 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-            <iframe  className="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4775022186022!2d72.75502882100692!3d40.72951738805994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd03b471cd3683%3A0x8deee6a490ede57!2sBurger%20Grill!5e0!3m2!1sru!2s!4v1662372500505!5m2!1sru!2s" width="600" height="450"></iframe>
+              <iframe
+                className="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4775022186022!2d72.75502882100692!3d40.72951738805994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd03b471cd3683%3A0x8deee6a490ede57!2sBurger%20Grill!5e0!3m2!1sru!2s!4v1662372500505!5m2!1sru!2s"
+                width="600"
+                height="450"
+              ></iframe>
             </Col>
-              <br />
-              <br />
+            <br />
+            <br />
             <Col lg="6" md="6">
               <div className="why__tasty-treat">
-                <h2 className="tasty__treat-title mb-4">    
+                <h2 className="tasty__treat-title mb-4">
                   Nega aynan<span> Bizni tanlash kerak? </span>
                 </h2>
                 <p className="tasty__treat-desc">
@@ -328,7 +319,9 @@ const Home = () => {
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Yangi va mazali taomlar </p>
+                      <i class="ri-checkbox-circle-line"></i> Yangi va mazali
+                      taomlar{" "}
+                    </p>
                     <p className="choose__us-desc">
                       {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Quia, voluptatibus. */}
@@ -337,7 +330,9 @@ const Home = () => {
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Sifatli qo'llab-quvvatlash </p>
+                      <i class="ri-checkbox-circle-line"></i> Sifatli
+                      qo'llab-quvvatlash{" "}
+                    </p>
                     <p className="choose__us-desc">
                       {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui, earum. */}
@@ -346,7 +341,9 @@ const Home = () => {
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Istalgan joydan buyurtma bering {" "}</p>
+                      <i class="ri-checkbox-circle-line"></i> Istalgan joydan
+                      buyurtma bering{" "}
+                    </p>
                     <p className="choose__us-desc">
                       {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui, earum. */}
@@ -370,10 +367,10 @@ const Home = () => {
               <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
                 <ProductCard item={item} />
               </Col>
-            ))}      
+            ))}
           </Row>
         </Container>
-      </section>  
+      </section>
     </Helmet>
   );
 };
