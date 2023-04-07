@@ -4,7 +4,7 @@ A fast food delivery website is an online platform that allows users to order fo
 
 # Demo
 
-burgergrill.uz
+[burgergrill.uz](https://burgergrill.uz/home)
 
 # Stack
 
