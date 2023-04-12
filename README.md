@@ -10,6 +10,6 @@ A fast food delivery website is an online platform that allows users to order fo
 
 - React JS
 - React-Redux JS
-- Bootstarp
+- Bootstrap
 - React-Router-DOM
 - Slick-Carousel
